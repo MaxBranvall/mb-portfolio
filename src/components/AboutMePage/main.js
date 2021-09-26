@@ -10,7 +10,7 @@ function AboutMePage() {
             <Flex h="100%" w="85%" m="0 auto" flexFlow="column">
                 <Heading p="1em" color="white" textAlign="center">About Me</Heading>
 
-                <Text fontSize="4xl" color="white" alignSelf="center">
+                <Text fontSize={["md", "md", "2xl", "3xl", "4xl"]} color="white" alignSelf="center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar quis urna eu auctor. Fusce ut nulla interdum, luctus erat vitae, hendrerit erat.
                     Aenean non sodales enim, nec porta magna. Etiam efficitur justo purus, ac cursus velit aliquet non.
                     Proin id leo tortor. Morbi congue tincidunt est, venenatis lobortis erat euismod at. Proin efficitur lacinia diam at sodales. Suspendisse aliquet sodales auctor.
