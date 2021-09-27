@@ -5,7 +5,7 @@ function AboutMePage() {
 
     return (
 
-        <Box h="100vh" bg="blue.400" background="linear-gradient(to right bottom, #2f3441 50%, #212531 50%)">
+        <Box h="100vh" bg="blue.400" background="linear-gradient(to right bottom, #2f3441 50%, #212531 50%)" id="aboutMePage">
 
             <Heading p="1em" color="white" textAlign="center">About Me</Heading>
 

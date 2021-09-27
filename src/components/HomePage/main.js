@@ -2,6 +2,8 @@
 import { ExternalLinkIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Heading, Box, Flex, Link, HStack, useColorMode} from "@chakra-ui/react";
 
+import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
 function HomePage() {
 
     return(
@@ -18,10 +20,21 @@ function HomePage() {
                         Software developer.
                     </Heading>
                     <HStack justifyContent="center" spacing="1em" fontSize="xl" zIndex="inherit">
-                        <Link color="white">About Me</Link>
-                        <Link color="white">Showcase</Link>
-                        <Link color="white">Education</Link>
-                        <Link color="white" isExternal>Github <ExternalLinkIcon /></Link>
+
+                        <ScrollLink activeClass="active" className="aboutMePage" to="aboutMePage" spy={true} smooth={true} duration={500}>
+                            <Link color="white"> About Me</Link>
+                        </ScrollLink>
+
+                        <ScrollLink activeClass="active" className="showcasePage" to="showcasePage" spy={true} smooth={true} duration={500}>
+                            <Link color="white">Showcase</Link>
+                        </ScrollLink>
+
+                        <ScrollLink activeClass="active" className="educationPage" to="educationPage" spy={true} smooth={true} duration={500}>
+                            <Link color="white">Education</Link>
+                        </ScrollLink>
+
+                        <Link color="white" href="https://github.com/MaxBranvall" isExternal>Github <ExternalLinkIcon /></Link>
+
                     </HStack>
                 </Flex>
             </Box>

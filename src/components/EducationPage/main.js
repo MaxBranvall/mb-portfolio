@@ -6,7 +6,7 @@ function EducationPage() {
 
     return (
 
-        <Box h="100vh" textAlign="center" background="linear-gradient(to left bottom, #2f3441 50%, #212531 50%)">
+        <Box id="educationPage" h="100vh" textAlign="center" background="linear-gradient(to left bottom, #2f3441 50%, #212531 50%)">
 
             <Heading variant="mainHeader">Education</Heading>
 
