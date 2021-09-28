@@ -2,6 +2,8 @@
 import { Box, Heading, Icon, Flex, Text } from "@chakra-ui/react";
 import { IoSchool } from 'react-icons/io5';
 
+import { useEffect } from 'react';
+
 function EducationPage() {
 
     return (
@@ -21,6 +23,7 @@ function EducationPage() {
                        <Text fontSize="4xl" color="white" zIndex="inherit">BS Computer Science</Text>
                        <Text fontSize="4xl" color="white" zIndex="inherit">June 2019 - Current...</Text>
                    </Box>
+
                </Box>
 
             </Flex>
