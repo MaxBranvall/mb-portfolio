@@ -8,7 +8,6 @@ import FloatingNav from './components/FloatingNav/main';
 function App() {
   return (
     <div className="App">
-      <FloatingNav />
       <PageSkeleton />
     </div>
   );

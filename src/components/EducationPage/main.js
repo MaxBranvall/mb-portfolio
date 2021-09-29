@@ -1,8 +1,6 @@
 
-import { Box, Heading, Icon, Flex, Text } from "@chakra-ui/react";
+import { Box, Heading, Icon, Flex, Text, Image } from "@chakra-ui/react";
 import { IoSchool } from 'react-icons/io5';
-
-import { useEffect } from 'react';
 
 function EducationPage() {
 
@@ -21,8 +19,9 @@ function EducationPage() {
                        <Icon as={IoSchool} w={20} h={20} color="black" zIndex="inherit"/>
                        <Text fontSize="4xl" color="white" zIndex="inherit">Southern New Hampshire University</Text>
                        <Text fontSize="4xl" color="white" zIndex="inherit">BS Computer Science</Text>
-                       <Text fontSize="4xl" color="white" zIndex="inherit">June 2019 - Current...</Text>
-                   </Box>
+                       <Text fontSize="3xl" color="white" zIndex="inherit">June 2019 - Current</Text>
+                       {/* <Image src="./snhu.jpg" /> */}
+                    </Box>
 
                </Box>
 
