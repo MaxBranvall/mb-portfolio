@@ -5,6 +5,7 @@ import AboutMePage from "../AboutMePage/main";
 import EducationPage from "../EducationPage/main";
 import HomePage from "../HomePage/main";
 import ProjectsPage from "../ProjectsPage/main";
+import FloatingNav from "../FloatingNav/main";
 import "./main.css"
 
 
@@ -13,10 +14,11 @@ function PageSkeleton() {
     return(
 
         <div>
+            {/* <FloatingNav /> */}
             <HomePage />
             <AboutMePage />
-            <EducationPage />
             <ProjectsPage />
+            <EducationPage />
         </div>
 
     )

@@ -1,5 +1,10 @@
 .active {
 
-    background-color: red;
+    text-decoration: underline;
 
+}
+
+.nav {
+    float: right;
+    margin: 0;
 }

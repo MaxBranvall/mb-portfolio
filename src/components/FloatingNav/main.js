@@ -25,12 +25,8 @@ function FloatingNav() {
 
     const [showNav, changeNav] = useState(true);
 
-    const [test, testing] = useState(false);
-
-    const x =
-    <ScrollLink activeClass={test} className="aboutMePage" to="aboutMePage" spy={true} smooth={true} duration={500}>
-        <Link color="black">About Me</Link>
-    </ScrollLink>
+    const [test, testing] = useState("home");
+    const duration = 500;
 
     const nav =
     <Menu>
@@ -38,21 +34,29 @@ function FloatingNav() {
         <MenuButton
             as={IconButton}
             aria-label="Navigation"
-            icon={<HamburgerIcon />} />
+            icon={<HamburgerIcon />} />            
         <MenuList>
 
-            <MenuItem className={x.props.className}>
-            {x}
-            </MenuItem>
-
             <MenuItem>
-                <ScrollLink activeClass="active" className="showcasePage" to="showcasePage" spy={true} smooth={true} duration={500}>
-                    <Link color="black">Showcase</Link>
+                <ScrollLink id="homeLink" activeClass={test} className="homePage" to="homePage" spy={true} smooth={true} duration={duration}>
+                    <Link color="black">Home</Link>
                 </ScrollLink>
             </MenuItem>
 
             <MenuItem>
-                <ScrollLink activeClass="active" className="educationPage" to="educationPage" spy={true} smooth={true} duration={500}>
+                <ScrollLink activeClass="active" className="aboutMePage" to="aboutMePage" spy={true} smooth={true} duration={duration}>
+                    <Link color="black">About Me</Link>
+                </ScrollLink>
+            </MenuItem>
+
+            <MenuItem>
+                <ScrollLink activeClass="active" className="showcasePage" to="showcasePage" spy={true} smooth={true} duration={duration}>
+                    <Link color="black">Projects</Link>
+                </ScrollLink>
+            </MenuItem>
+
+            <MenuItem>
+                <ScrollLink activeClass="active" className="educationPage" to="educationPage" spy={true} smooth={true} duration={duration}>
                     <Link color="black">Education</Link>
                 </ScrollLink>
             </MenuItem>
@@ -63,8 +67,7 @@ function FloatingNav() {
 
     return (
 
-        <Box position="sticky" top="100px" m="0" zIndex="20" >
-            {console.log(x.props.className)}
+        <Box position="sticky" top="100px" m="0" id="floatingNav" className="nav" zIndex="10">
             {nav}
         </Box>
 
