@@ -1,6 +1,7 @@
 
-import { ExternalLinkIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Heading, Box, Flex, Link, HStack, useColorMode} from "@chakra-ui/react";
+import { ExternalLinkIcon, EmailIcon } from "@chakra-ui/icons";
+import { Heading, Box, Flex, Link, HStack, Icon, useColorMode} from "@chakra-ui/react";
+import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai"
 
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
@@ -31,8 +32,11 @@ function HomePage() {
                         <Link color="white">Education</Link>
                     </ScrollLink>
 
-                    <Link color="white" href="https://github.com/MaxBranvall" isExternal>Github <ExternalLinkIcon /></Link>
-
+                </HStack>
+                <HStack justifyContent="center" spacing="1em" fontSize="xl" zIndex="inherit" mt={2}>
+                    <Link color="white" href="mailto: maxbranvall@gmail.com"><EmailIcon boxSize="8" /></Link>
+                    <Link color="white" href="https://github.com/MaxBranvall" isExternal><Icon as={AiOutlineGithub} boxSize="8" /></Link>
+                    <Link color="white" href="https://www.linkedin.com/in/max-branvall-980272247/" isExternal><Icon as={AiFillLinkedin} boxSize="8" /></Link>
                 </HStack>
             </Flex>
         </Box>
