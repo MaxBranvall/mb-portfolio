@@ -7,14 +7,14 @@ function EducationPage() {
 
     const responsiveText = {base: "xl", md: "2xl", xl: "4xl"}
     const responsiveTextYears = {base: "md", md: "xl", xl: "2xl"}
-    const responsiveImage = {base: "125px", md: "150px", xl: "250px"}
+    const responsiveImage = {base: "120px", md: "150px", xl: "250px"}
 
     return (
 
         <Box id="educationPage" h="100vh" textAlign="center" background="linear-gradient(to right bottom, #2f3441 50%, #212531 50%)">
 
             <Flex justifyContent="center" flexDir="column" h="inherit">
-                <Heading variant="mainHeader">Education</Heading>
+                <Heading variant="mainHeader" p="0.5em">Education</Heading>
 
                 <Flex h="100%" justifyContent="space-evenly" alignItems="center" flexFlow={{base: "column", lg: "column", xl: "row"}} m="0 5%">
 
