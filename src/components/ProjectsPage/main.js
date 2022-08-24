@@ -11,7 +11,8 @@ function ProjectsPage() {
     const iconSize = "40px";
 
     var projects = []
-    var projectJSX = []
+    var projectJSXdesktop = []
+    var projectJSXmobile = []
 
     let winMixerDeck = {
         title: "WinMixerDeck",
@@ -38,7 +39,7 @@ function ProjectsPage() {
     projects.push(gtaCursor);
 
     projects.forEach(el => {
-        projectJSX.push(
+        projectJSXdesktop.push(
             <Box p="1%" position="relative" maxWidth="20%">
                 <Box position="absolute" height="100%" bgColor="blue.400" borderRadius="15" opacity="0.7" top="0" left="0" w="100%"/>
                 <Box position="relative" zIndex="2" color="white" h="100%">
@@ -54,6 +55,24 @@ function ProjectsPage() {
                 </Box>
             </Box>
         )
+        projectJSXmobile.push(
+            <Popover>
+            <PopoverTrigger>
+                <Button>{el.title}</Button>
+            </PopoverTrigger>
+            <PopoverContent>
+                <PopoverArrow />
+                <PopoverCloseButton />
+                <PopoverHeader><Link href={el.repoLink} textDecoration="underline" fontSize={responsiveText}>Link to repo</Link></PopoverHeader>
+                <PopoverBody>{el.description}
+                    <Heading>Technologies Used</Heading>
+                    <HStack justifyContent="center" mt="3%">
+                        {el.technologiesUsed}
+                    </HStack>
+                </PopoverBody>
+            </PopoverContent>
+        </Popover>
+        )
     })
 
     let i = 0;
@@ -65,13 +84,14 @@ function ProjectsPage() {
             <Heading variant="mainHeader">Projects</Heading>
 
             <Flex justifyContent="center" gridGap="10%" display={responsiveDisplay}>
-                {projectJSX}
+                {projectJSXdesktop}
             </Flex>
 
             {/* <Text color="white">GTA-Cursor, Momscookbook, WinMixerDeck, try and finish autodirectory, maybe build maintnence minder site</Text> */}
 
             <Flex justifyContent="space-around" display={responsiveDisplay2}>
-                <Popover>
+                {projectJSXmobile}
+                {/* <Popover>
                     <PopoverTrigger>
                         <Button>WinMixerDeck</Button>
                     </PopoverTrigger>
@@ -114,7 +134,7 @@ function ProjectsPage() {
                         <PopoverHeader>Header</PopoverHeader>
                         <PopoverBody>Body of popover</PopoverBody>
                     </PopoverContent>
-                </Popover>
+                </Popover> */}
             </Flex>
 
         </Box>
