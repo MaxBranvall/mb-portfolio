@@ -6,7 +6,9 @@ import { SiCsharp, SiCss3, SiHtml5, SiJavascript } from "react-icons/si"
 function ProjectsPage() {
 
     const responsiveText = {base: "xl", md: "2xl", xl: "4xl"}
-    const responsiveDisplay = {base: "none", md: "flex"}
+    const responsiveHeading = {base: "xl", md: "2xl", xl: "4xl"}
+    const respDescriptionText = {base: "sm", md: "md", xl: "lg"}
+    const responsiveDisplay = {base: "none", md:"flex", xl: "flex"}
     const responsiveDisplay2 = {base: "flex", md: "none", xl: "none"}
     const iconSize = "40px";
 
@@ -17,9 +19,10 @@ function ProjectsPage() {
     let winMixerDeck = {
         title: "WinMixerDeck",
         repoLink: "https://github.com/MaxBranvall/WinMixerDeck",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium purus sed semper feugiat. Ut purus magna, ultrices interdum elementum non, pretium at orci. Vivamus aliquet molestie risus, ut feugiat ante laoreet eu. Maecenas at nunc at urna pretium accumsan. Morbi aliquet feugiat ipsum, eu hendrerit lacus commodo eget. Praesent fermentum vestibulum ante, in auctor mi semper nec. Ut lectus libero, porttitor ac lectus non, vestibulum tincidunt ante. Nam tempor scelerisque quam. Fusce consequat ultrices ante, ut dignissim lacus sagittis auctor. Nunc et rhoncus mauris.",
+        description: "Stream Deck plugin which allows users to control the volume of individual applications from their Stream Deck. The front-end is written in Javascript, HTML, and CSS while the backend" +
+        " is written in C# using .NET 5. The backend utilizes my C# Stream Deck API wrapper.",
         technologiesUsed: [
-            <Icon h={iconSize} w={iconSize} color="violet" as={SiCsharp} />,
+            <Link  ><Icon h={iconSize} w={iconSize} color="violet" as={SiCsharp} /> </Link>,
             <Icon h={iconSize} w={iconSize} color="blue.300" as={SiCss3} />,
             <Icon h={iconSize} w={iconSize} color="orange.500" as={SiHtml5} />,
             <Icon h={iconSize} w={iconSize} color="yellow" as={SiJavascript} />
@@ -29,7 +32,8 @@ function ProjectsPage() {
     let gtaCursor = {
         title: "GTACursor",
         repoLink: "https://github.com/MaxBranvall/GTAStyleCursor",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium purus sed semper feugiat. Ut purus magna, ultrices interdum elementum non, pretium at orci. Vivamus aliquet molestie risus, ut feugiat ante laoreet eu. Maecenas at nunc at urna pretium accumsan. Morbi aliquet feugiat ipsum, eu hendrerit lacus commodo eget. Praesent fermentum vestibulum ante, in auctor mi semper nec. Ut lectus libero, porttitor ac lectus non, vestibulum tincidunt ante. Nam tempor scelerisque quam. Fusce consequat ultrices ante, ut dignissim lacus sagittis auctor. Nunc et rhoncus mauris.",
+        description: "Windows desktop application which allows users to change their desired system cursors to the iconic middle finger cursor present on the computers in the Grand Theft Auto video games." +
+        " The front-end was built with WPF and is designed to resemble the eyefind.info website from the video games. The back-end utilizes my Windows cursor changing library.",
         technologiesUsed: [
             <Icon h={iconSize} w={iconSize} color="violet" as={SiCsharp} />
         ]
@@ -40,19 +44,20 @@ function ProjectsPage() {
 
     projects.forEach(el => {
         projectJSXdesktop.push(
-            <Box p="1%" position="relative" maxWidth="20%">
-                <Box position="absolute" height="100%" bgColor="blue.400" borderRadius="15" opacity="0.7" top="0" left="0" w="100%"/>
-                <Box position="relative" zIndex="2" color="white" h="100%">
+            <Box p="1%" position="relative" maxWidth="20%" h="inherit">
+                <Box position="absolute" height="100%" bgColor="blue.400" borderRadius="15" opacity="0.5" top="0" left="0" w="100%"/>
+                <Flex position="relative" zIndex="2" color="white" h="100%" direction="column">
                     <Heading>{el.title}</Heading>
                     <Link href={el.repoLink} textDecoration="underline" fontSize={responsiveText}>Link to repo</Link>
-                    <Text>
+                    <Text fontSize={respDescriptionText}>
                         {el.description}
-                    </Text>
-                    <Heading>Technologies Used</Heading>
+                    </Text>                    
+                    <Spacer />
+                    <Heading fontSize={responsiveHeading}>Technologies Used</Heading>
                     <HStack justifyContent="center" mt="3%">
                         {el.technologiesUsed}
                     </HStack>
-                </Box>
+                </Flex>
             </Box>
         )
         projectJSXmobile.push(
