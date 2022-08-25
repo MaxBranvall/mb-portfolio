@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/mb-portfolio.github.io/static/css/main.fe9dc61d.css",
-    "main.js": "/mb-portfolio.github.io/static/js/main.598aca93.js",
-    "static/js/787.3e224a05.chunk.js": "/mb-portfolio.github.io/static/js/787.3e224a05.chunk.js",
-    "static/media/open-sans-all-700-normal.woff": "/mb-portfolio.github.io/static/media/open-sans-all-700-normal.a39de6b1b80c7f21cf88.woff",
-    "static/media/aguafina-script-all-400-normal.woff": "/mb-portfolio.github.io/static/media/aguafina-script-all-400-normal.da242863297db457edcc.woff",
-    "static/media/open-sans-cyrillic-ext-700-normal.woff2": "/mb-portfolio.github.io/static/media/open-sans-cyrillic-ext-700-normal.e5cd36e0fe6514f56397.woff2",
-    "static/media/aguafina-script-latin-400-normal.woff2": "/mb-portfolio.github.io/static/media/aguafina-script-latin-400-normal.76cb5c929322147efaf2.woff2",
-    "static/media/open-sans-latin-700-normal.woff2": "/mb-portfolio.github.io/static/media/open-sans-latin-700-normal.55397be74c642720aa75.woff2",
-    "static/media/open-sans-latin-ext-700-normal.woff2": "/mb-portfolio.github.io/static/media/open-sans-latin-ext-700-normal.3e3826616c156f9d249f.woff2",
-    "static/media/open-sans-cyrillic-700-normal.woff2": "/mb-portfolio.github.io/static/media/open-sans-cyrillic-700-normal.d09ca2b77e933d5c6582.woff2",
-    "static/media/open-sans-greek-700-normal.woff2": "/mb-portfolio.github.io/static/media/open-sans-greek-700-normal.f8a27a6de63d2728adc4.woff2",
-    "static/media/open-sans-vietnamese-700-normal.woff2": "/mb-portfolio.github.io/static/media/open-sans-vietnamese-700-normal.122371a2c0cfc6530047.woff2",
-    "static/media/logo.svg": "/mb-portfolio.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/open-sans-greek-ext-700-normal.woff2": "/mb-portfolio.github.io/static/media/open-sans-greek-ext-700-normal.6644a09ac3084b55fcc2.woff2",
-    "static/media/aguafina-script-latin-ext-400-normal.woff2": "/mb-portfolio.github.io/static/media/aguafina-script-latin-ext-400-normal.141a5c2d87cfbb745cd6.woff2",
-    "index.html": "/mb-portfolio.github.io/index.html",
-    "main.fe9dc61d.css.map": "/mb-portfolio.github.io/static/css/main.fe9dc61d.css.map",
-    "main.598aca93.js.map": "/mb-portfolio.github.io/static/js/main.598aca93.js.map",
-    "787.3e224a05.chunk.js.map": "/mb-portfolio.github.io/static/js/787.3e224a05.chunk.js.map"
+    "main.css": "/static/css/main.9a25f47e.css",
+    "main.js": "/static/js/main.00e5a931.js",
+    "static/js/787.3e224a05.chunk.js": "/static/js/787.3e224a05.chunk.js",
+    "static/media/open-sans-all-700-normal.woff": "/static/media/open-sans-all-700-normal.a39de6b1b80c7f21cf88.woff",
+    "static/media/aguafina-script-all-400-normal.woff": "/static/media/aguafina-script-all-400-normal.da242863297db457edcc.woff",
+    "static/media/open-sans-cyrillic-ext-700-normal.woff2": "/static/media/open-sans-cyrillic-ext-700-normal.e5cd36e0fe6514f56397.woff2",
+    "static/media/aguafina-script-latin-400-normal.woff2": "/static/media/aguafina-script-latin-400-normal.76cb5c929322147efaf2.woff2",
+    "static/media/open-sans-latin-700-normal.woff2": "/static/media/open-sans-latin-700-normal.55397be74c642720aa75.woff2",
+    "static/media/open-sans-latin-ext-700-normal.woff2": "/static/media/open-sans-latin-ext-700-normal.3e3826616c156f9d249f.woff2",
+    "static/media/open-sans-cyrillic-700-normal.woff2": "/static/media/open-sans-cyrillic-700-normal.d09ca2b77e933d5c6582.woff2",
+    "static/media/open-sans-greek-700-normal.woff2": "/static/media/open-sans-greek-700-normal.f8a27a6de63d2728adc4.woff2",
+    "static/media/open-sans-vietnamese-700-normal.woff2": "/static/media/open-sans-vietnamese-700-normal.122371a2c0cfc6530047.woff2",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/open-sans-greek-ext-700-normal.woff2": "/static/media/open-sans-greek-ext-700-normal.6644a09ac3084b55fcc2.woff2",
+    "static/media/aguafina-script-latin-ext-400-normal.woff2": "/static/media/aguafina-script-latin-ext-400-normal.141a5c2d87cfbb745cd6.woff2",
+    "index.html": "/index.html",
+    "main.9a25f47e.css.map": "/static/css/main.9a25f47e.css.map",
+    "main.00e5a931.js.map": "/static/js/main.00e5a931.js.map",
+    "787.3e224a05.chunk.js.map": "/static/js/787.3e224a05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe9dc61d.css",
-    "static/js/main.598aca93.js"
+    "static/css/main.9a25f47e.css",
+    "static/js/main.00e5a931.js"
   ]
 }
