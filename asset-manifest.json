@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mb-portfolio.github.io/static/css/main.fe9dc61d.css",
-    "main.js": "/mb-portfolio.github.io/static/js/main.598aca93.js",
+    "main.js": "/mb-portfolio.github.io/static/js/main.e5c96463.js",
     "static/js/787.3e224a05.chunk.js": "/mb-portfolio.github.io/static/js/787.3e224a05.chunk.js",
     "static/media/open-sans-all-700-normal.woff": "/mb-portfolio.github.io/static/media/open-sans-all-700-normal.a39de6b1b80c7f21cf88.woff",
     "static/media/aguafina-script-all-400-normal.woff": "/mb-portfolio.github.io/static/media/aguafina-script-all-400-normal.da242863297db457edcc.woff",
@@ -17,11 +17,11 @@
     "static/media/aguafina-script-latin-ext-400-normal.woff2": "/mb-portfolio.github.io/static/media/aguafina-script-latin-ext-400-normal.141a5c2d87cfbb745cd6.woff2",
     "index.html": "/mb-portfolio.github.io/index.html",
     "main.fe9dc61d.css.map": "/mb-portfolio.github.io/static/css/main.fe9dc61d.css.map",
-    "main.598aca93.js.map": "/mb-portfolio.github.io/static/js/main.598aca93.js.map",
+    "main.e5c96463.js.map": "/mb-portfolio.github.io/static/js/main.e5c96463.js.map",
     "787.3e224a05.chunk.js.map": "/mb-portfolio.github.io/static/js/787.3e224a05.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe9dc61d.css",
-    "static/js/main.598aca93.js"
+    "static/js/main.e5c96463.js"
   ]
 }
