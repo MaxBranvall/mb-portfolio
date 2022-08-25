@@ -8,7 +8,7 @@ import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scrol
 function HomePage() {
 
     return(
-        <Box id="homePage" bgImage="url('./bg.jpg')" bgSize="cover" h="100%" textAlign="center" position="relative">
+        <Box id="homePage" bgImage="url('./assets/bg.jpg')" bgSize="cover" h="100%" textAlign="center" position="relative">
             <Box bgColor="black" opacity="0.7" h="100%" w="100%" position="absolute" zIndex="1" />
 
             <Flex direction="column" h="100vh" justify="center" zIndex="25" marginRight="0">
