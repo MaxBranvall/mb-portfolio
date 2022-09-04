@@ -16,6 +16,16 @@ function ProjectsPage() {
     var projectJSXdesktop = []
     var projectJSXmobile = []
 
+    let streamDeckCS = {
+        title: "StreamDeckCS",
+        repoLink: "https://github.com/MaxBranvall/StreamDeckCS",
+        description: "A C# Stream Deck API wrapper developed for ease of use without sacrifice, giving developers" + 
+        " complete freedom in their plugin design and the ability to utilize every feature currently available in the Stream Deck API.",
+        technologiesUsed: [
+            <Icon title="CSharp" h={iconSize} w={iconSize} color="violet" as={SiCsharp} />,
+        ]
+    }
+
     let winMixerDeck = {
         title: "WinMixerDeck",
         repoLink: "https://github.com/MaxBranvall/WinMixerDeck",
@@ -59,6 +69,7 @@ function ProjectsPage() {
         ]
     }
 
+    projects.push(streamDeckCS);
     projects.push(winMixerDeck);
     projects.push(gtaCursor);
     // projects.push(momsCookbook);
