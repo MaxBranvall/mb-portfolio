@@ -11,7 +11,7 @@ function EducationPage() {
 
     return (
 
-        <Box id="educationPage" h="100vh" textAlign="center" background="linear-gradient(to right bottom, #2f3441 50%, #212531 50%)">
+        <Box className="section" id="educationPage" h="100vh" textAlign="center" background="linear-gradient(to right bottom, #2f3441 50%, #212531 50%)">
 
             <Flex justifyContent="center" flexDir="column" h="inherit">
                 <Heading variant="mainHeader" p="0.5em">Education</Heading>

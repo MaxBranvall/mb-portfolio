@@ -10,7 +10,7 @@ import Footer from "../Footer/main"
 import "./main.css"
 
 
-function PageSkeleton() {
+function PageSkeleton({fullPage}) {
 
     return(
 

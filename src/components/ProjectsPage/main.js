@@ -19,7 +19,7 @@ function ProjectsPage() {
     let streamDeckCS = {
         title: "StreamDeckCS",
         repoLink: "https://github.com/MaxBranvall/StreamDeckCS",
-        description: "A C# Stream Deck API wrapper developed for ease of use without sacrifice, giving developers" + 
+        description: "A C# Stream Deck API wrapper developed for ease of use without sacrifice, giving developers" +
         " complete freedom in their plugin design and the ability to utilize every feature currently available in the Stream Deck API.",
         technologiesUsed: [
             <Icon title="CSharp" h={iconSize} w={iconSize} color="violet" as={SiCsharp} />,
@@ -85,7 +85,7 @@ function ProjectsPage() {
                     <Link href={el.repoLink} textDecoration="underline" fontSize={responsiveText}>Link to repo</Link>
                     <Text fontSize={respDescriptionText}>
                         {el.description}
-                    </Text>                    
+                    </Text>
                     <Spacer />
                     <Heading fontSize={responsiveHeading}>Technologies Used</Heading>
                     <HStack justifyContent="center" mt="3%">
@@ -118,7 +118,7 @@ function ProjectsPage() {
 
     return (
 
-        <Box id="showcasePage" h="100vh" bg="green.400" background="linear-gradient(to left bottom, #2f3441 50%, #212531 50%)" textAlign="center">
+        <Box className="section" id="showcasePage" h="100vh" bg="green.400" background="linear-gradient(to left bottom, #2f3441 50%, #212531 50%)" textAlign="center">
 
             <Heading variant="mainHeader">Projects</Heading>
 

@@ -5,10 +5,10 @@ import ThemeChanger from "./components/themeChanger/themeChanger"
 import PageSkeleton from './components/PageSkeleton/main';
 import FloatingNav from './components/FloatingNav/main';
 
-function App() {
+function App(fullPageApi) {
   return (
     <div className="App">
-      <PageSkeleton />
+      <PageSkeleton fullPageApi={fullPageApi} />
     </div>
   );
 }

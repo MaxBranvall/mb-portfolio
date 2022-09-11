@@ -10,6 +10,7 @@
     "@fontsource/aguafina-script": "^4.5.0",
     "@fontsource/open-sans": "^4.5.0",
     "@fontsource/raleway": "^4.5.0",
+    "@fullpage/react-fullpage": "^0.1.28",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -46,6 +47,5 @@
       "last 1 edge version"
     ]
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

@@ -1,3 +1,11 @@
 .app {
     position: relative;
 }
+
+/* .fp-table {
+    justify-content: unset !important;
+} */
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: rgb(104, 104, 104) !important;
+}
