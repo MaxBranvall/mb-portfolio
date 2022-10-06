@@ -1,7 +1,7 @@
 
 import { Box, Heading, Text, Button, PopoverHeader, Flex, Link, HStack, Icon, Spacer } from "@chakra-ui/react";
 import { Popover, PopoverTrigger, PopoverContent, PopoverArrow, PopoverCloseButton, PopoverBody } from "@chakra-ui/react";
-import { SiCsharp, SiCss3, SiHtml5, SiJavascript } from "react-icons/si"
+import { SiCsharp, SiCss3, SiHtml5, SiJavascript, SiTypescript } from "react-icons/si"
 
 function ProjectsPage() {
 
@@ -52,10 +52,12 @@ function ProjectsPage() {
     let momsCookbook = {
         title: "MomsCookbook",
         repoLink: "https://github.com/MaxBranvall/MomsCookbook",
-        description: "Windows desktop application which allows users to change their desired system cursors to the iconic middle finger cursor present on the computers in the Grand Theft Auto video games." +
-        " The front-end was built with WPF and is designed to resemble the eyefind.info website from the video games. The back-end utilizes my Windows cursor changing library.",
+        description: "A full stack SPA including all CRUD operations and user authorization/authentication. Utilizes an Angular front-end and a .NET Core back end.",
         technologiesUsed: [
-            <Icon title="CSharp" h={iconSize} w={iconSize} color="violet" as={SiCsharp} />
+            <Icon title="CSharp" h={iconSize} w={iconSize} color="violet" as={SiCsharp} />,
+            <Icon title="CSS3" h={iconSize} w={iconSize} color="blue.300" as={SiCss3} />,
+            <Icon title="HTML5" h={iconSize} w={iconSize} color="orange.500" as={SiHtml5} />,
+            <Icon title="Javascript" h={iconSize} w={iconSize} color="blue.300" as={SiTypescript} />
         ]
     }
 
@@ -72,7 +74,7 @@ function ProjectsPage() {
     projects.push(streamDeckCS);
     projects.push(winMixerDeck);
     projects.push(gtaCursor);
-    // projects.push(momsCookbook);
+    projects.push(momsCookbook);
     // projects.push(autoDirectory);
 
     // add each project to desktop and mobile layout containers
@@ -122,7 +124,7 @@ function ProjectsPage() {
 
             <Heading variant="mainHeader">Projects</Heading>
 
-            <Flex justifyContent="center" gridGap="1em" wrap={{base: null, md: "nowrap", xl: "wrap"}} display={responsiveDisplay}>
+            <Flex justifyContent="center" gridGap="1em" m="1%" wrap={{base: null, md: "nowrap", xl: "wrap"}} display={responsiveDisplay}>
                 {projectJSXdesktop}
             </Flex>
 
