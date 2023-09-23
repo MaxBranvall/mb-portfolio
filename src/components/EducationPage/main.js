@@ -25,7 +25,7 @@ function EducationPage() {
                             <Icon as={IoSchool} w={20} h={20} color="black" zIndex="inherit"/>
                             <Text fontSize={responsiveText} color="white" zIndex="inherit">Southern New Hampshire University</Text>
                             <Text fontSize={responsiveText} color="white" zIndex="inherit">B.S. Computer Science</Text>
-                            <Text fontSize={responsiveTextYears} color="white" zIndex="inherit">June 2020 - Current</Text>
+                            <Text fontSize={responsiveTextYears} color="white" zIndex="inherit">June 2020 - April 2023</Text>
                             <Image boxSize={responsiveImage} margin="auto" src="./assets/snhu.png" />
                             </Box>
 
@@ -37,7 +37,7 @@ function EducationPage() {
                         <Box position="relative" zIndex="2">
                             <Text fontSize={responsiveText} color="white" zIndex="inherit">Amazon Web Services</Text>
                             <Text fontSize={responsiveText} color="white" zIndex="inherit">Certified Cloud Practitioner</Text>
-                            <Text fontSize={responsiveTextYears} color="white" mb="3%" zIndex="inherit">July 2022 - April 2023</Text>
+                            <Text fontSize={responsiveTextYears} color="white" mb="3%" zIndex="inherit">July 2022 - Current</Text>
                             <Image boxSize={responsiveImage} margin="0 auto" src="./assets/aws.png" />
                         </Box>
 
